@@ -108,10 +108,11 @@ a{
 	
 	.mainfooter{
 		height: 60px;
+		width: 90%;
 	}
 	
 	.button{
-		width: 30%;
+		width: 50%;
 	}
 	
 }
