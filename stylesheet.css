@@ -24,6 +24,15 @@ a{
 	width: 22%;
 	border-radius: 10px;
 }
+
+#registro{
+	display: inline-block;
+}
+
+#olvContra{
+	display: inline-block;
+}
+
 .body {
     margin:0 auto;
     width:70%;
