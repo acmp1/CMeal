@@ -35,6 +35,11 @@ a{
 	margin-top: 5%;
 }
 
+.adentroBoton{
+	position: absolute;
+	margin:auto;
+}
+
 #registro{
 	display: inline-block;
 	margin-left: 4%;
