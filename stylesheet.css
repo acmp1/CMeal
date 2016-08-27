@@ -22,6 +22,10 @@ a{
 form{
 	width: 40px;
 }
+
+.button{
+	background-color: #ffb3b3;
+}
 .body {
     margin:0 auto;
     width:70%;
