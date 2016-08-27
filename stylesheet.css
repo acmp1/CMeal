@@ -18,8 +18,15 @@ body {
 a{
     text-decoration: none;
 }
-
 .button{
+	background-color: #ff6666;
+	width: 90px;
+	height: 35px;
+	border-radius: 10px;
+	margin-top: 5%;
+}
+
+.button2{
 	background-color: #ff6666;
 	width: 90px;
 	height: 35px;
