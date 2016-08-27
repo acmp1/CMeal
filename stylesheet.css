@@ -18,6 +18,10 @@ body {
 a{
     text-decoration: none;
 }
+
+form{
+	width: 40px;
+}
 .body {
     margin:0 auto;
     width:70%;
