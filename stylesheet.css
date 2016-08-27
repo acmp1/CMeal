@@ -21,7 +21,8 @@ a{
 
 .button{
 	background-color: #ffd699;
-	width: 22%;
+	width: 20%;
+	height: 10%;
 	border-radius: 10px;
 	display: inline-block;
 }
