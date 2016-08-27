@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $(window).resize(function(){
         if ($(window).width() <= 800) {
-            $("#imagen").height(84.8);
-            $("#imagen").width(220.8);
+            $("#imagen").height(100.7);
+            $("#imagen").width(262.2);
         }
     });
 });
