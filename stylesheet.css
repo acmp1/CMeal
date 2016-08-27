@@ -24,7 +24,7 @@ a{
 	height: 35px;
 	border-radius: 10px;
 	margin-top: 5%;
-	position: static;
+	
 }
 
 .button2{
@@ -34,7 +34,7 @@ a{
 	border-radius: 10px;
 	display: inline-block;
 	margin-top: 5%;
-	position: static;
+	
 }
 
 .adentroBoton{
