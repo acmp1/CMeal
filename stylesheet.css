@@ -101,4 +101,17 @@ a{
 }
 @media only screen and (min-width : 150px) and (max-width : 780px) {
 	
+	.body {
+		width: 90%;
+		font-size: 95%;
+	}
+	
+	.mainfooter{
+		height: 60px;
+	}
+	
+	.button{
+		width: 30%;
+	}
+	
 }
