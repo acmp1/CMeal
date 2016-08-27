@@ -20,9 +20,9 @@ a{
 }
 
 .button{
-	background-color: #ffd699;
-	width: 20%;
-	height: 10px;
+	background-color: #e60000;
+	width: 10px;
+	height: 5px;
 	border-radius: 10px;
 	display: inline-block;
 }
