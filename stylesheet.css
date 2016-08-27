@@ -27,12 +27,12 @@ a{
 
 #registro{
 	display: inline-block;
-	margin-right: 2%;
+	
 }
 
 #olvContra{
 	display: inline-block;
-	
+	margin-left: 1%;
 }
 
 .body {
