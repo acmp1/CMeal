@@ -23,6 +23,7 @@ a{
 	background-color: #ffd699;
 	width: 22%;
 	border-radius: 10px;
+	display: inline-block;
 }
 
 #registro{
