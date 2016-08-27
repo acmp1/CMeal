@@ -112,7 +112,12 @@ a{
 	}
 	
 	.button{
-		width: 50%;
+		width: 60%;
+	}
+	
+	.centro{
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 	
 }
