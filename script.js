@@ -29,13 +29,24 @@ function initMap(){
                                 'Error: Your browser doesn\'t support geolocation');
         }
 google.maps.event.addDomListener(window, 'load', initMap);
-var Usuario = function(nombre,password,tarjeta)
+var Usuario = function(nombre,password,tarjeta,correo)
 {
     this.nombre=nombre;
     this.password=password;
     this.tarjeta=tarjeta;
+    this.correo=correo;
 }
+var arrUsuario=[];
+var ContaUsuario=0;
 $(document).ready(function(){
+    var nombre="0",password="0",tarjeta="0",correo="0",passwordConfir="0";
+    $("#bRegistrar").click(function(){
+        nombre=$('input[name=nUsuario]').val();
+        password=$('input[name=Contraseña]').val();
+        passwordConfir=$('input[name=Confirmacion]').val();
+        tarjeta=$('input[name=tarjeta]').val();
+        correo=$('input[name=correo]').val();
+    });
     $(window).resize(function(){
         if ($(window).width()<=580) {
             $("#logo").height(68.9);
