@@ -39,7 +39,7 @@ a{
 
 .adentroBoton{
 	position: absolute;
-	margin: auto;
+	margin-right: 10px;
 }
 
 #registro{
