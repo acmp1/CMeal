@@ -40,24 +40,24 @@ var arrUsuario=[];
 var ContaUsuario=0;
 $(document).ready(function(){
     var nombre="0",password="0",tarjeta="0",correo="0",passwordConfir="0";
-    $("#bRegistrar").click(function(){
-        nombre=$('input[name=nUsuario]').val();
-        password=$('input[name=Contraseña]').val();
-        passwordConfir=$('input[name=Confirmacion]').val();
-        if(password==passwordConfir)
+    nombre=$('input[name=nUsuario]').val();
+    correo=$('input[name=correo]').val();
+    password=$('input[name=Contraseña]').val();
+    passwordConfir=$('input[name=Confirmacion]').val();
+    if(password==passwordConfir)
+    {
+        $('input[name=Confirmacion]').focus(function(){
+            input.css('outline-color','#00ff00')
+        });
+    }else
         {
-            $('#Confir').focus(function(){
-                input.css('outline-color','#00ff00')
-            });
-        }
-        else
-        {
-            $('#Confir').focus(function(){
+            $('input[name=Confirmacion]').focus(function(){
                 input.css('outline-color','#ff0000')
             });
         }
-        tarjeta=$('input[name=tarjeta]').val();
-        correo=$('input[name=correo]').val();
+    tarjeta=$('input[name=tarjeta]').val();
+    $("#bRegistrar").click(function(){
+        
     });
     $(window).resize(function(){
         if ($(window).width()<=580) {
