@@ -22,10 +22,10 @@
 }
 
 .cuadro{
-	border-radius = 10px;
+	border-radius = 20px;
 	border: 2px solid #ffcc66;
 	width: 300px;
-	height: 100px;
+	height: 50px;
 	background-color: #ffe6b3;
 	margin-left: 90px;
 	margin-top: 20px;
