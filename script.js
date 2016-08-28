@@ -56,12 +56,14 @@ google.maps.event.addDomListener(window, 'load', initMap);
     this.correo=correo;
 }
 
+// clase platillo
 var Platillo = function(nombre, precio)
 {
     this.nombrePlatillo = nombre;
     this.precio = precio;
 }
 
+// clase servicio
 var Servicio = function(arr, numPlat, lat, lon)
 {
     this.platillos = arr;
@@ -70,6 +72,7 @@ var Servicio = function(arr, numPlat, lat, lon)
     this.longitud = lon;
 }
 
+// crea platillos
 var platillo1 = new Platillo("Pollo", 30);
 var platillo2= new Platillo("Pescado", 25);
 var platillo3= new Platillo("Sandwich", 15);
@@ -79,6 +82,22 @@ var platillo6= new Platillo("Sopa", 15);
 var platillo7= new Platillo("Molletes", 10);
 var platillo8= new Platillo("Chilaquiles", 15);
 
+// arreglos de platilllos
+var arr1 = [platillo1, platillo3, platillo7];
+var arr2 = [platillo2, platillo4, platillo5];
+var arr3 = [platillo6, platillo8, platillo1];
+var arr4 = [platillo4, platillo8, platillo6];
+var arr5 = [platillo1, platillo4, platillo5];
+
+
+var servicio1 = new Servicio(arr1, "Chez Victor", 3, 25.647839, -100.290473 );
+var servicio2 = new Servicio(arr2, "Ashtons", 3, 25.648913, -100.292490);
+var servicio3 = new Servicio(arr3, "Tim Hortons", 3, 25.646038, -100.290891);
+var servicio4 = new Servicio(arr4, "Comida Feliz", 3, 25.648458, -100.289040 );
+var servicio5 = new Servicio(arr5, "Restaurante de clari", 3, 25.648850, -100.288573);
+
+arrServicios = [servicio1, servicio2, servicio3, servicio4, servicio5];
+var iContaServicios = 5;
 
 
 
