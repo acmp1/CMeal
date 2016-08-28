@@ -82,7 +82,7 @@ function initMap(){
             
         
         }
-        marker[0].addListener('click',function{
+        markers[0].addListener('click',function{
             window.location.href='Pags/Cuadro.html';
         });
         
