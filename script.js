@@ -1,4 +1,5 @@
 var map;
+console.log("hola");
 function initMap(){
     map=new google.maps.Map(document.getElementById('map'),{
         center:{lat:25.651517,lng:-100.289669},
@@ -45,7 +46,7 @@ var ContaUsuario=0;
 
 
 $(document).ready(function(){
-    console.log("hola");
+    
     var nombre="0",password="0",tarjeta="0",correo="0",passwordConfir="0";
     /*passwordConfir=$('input[name=Confirmacion]').val();*/
         /*var input=$('input[name=Confirmacion]').focus(function(){
