@@ -6,12 +6,13 @@ var Platillo = function(nombre, precio)
 }
 
 // clase servicio
-var Servicio = function(arr, numPlat, lat, lon)
+var Servicio = function(arr, nombre, numPlat, lat, lon)
 {
     this.platillos = arr;
     this.numPlatillos = numPlat;
     this.latitud = lat;
     this.longitud = lon;
+    this.nombreRest = nombre;
 }
 
 // crea platillos
