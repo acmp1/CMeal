@@ -45,6 +45,7 @@ var ContaUsuario=0;
 
 
 $(document).ready(function(){
+    console.log("hola");
     var nombre="0",password="0",tarjeta="0",correo="0",passwordConfir="0";
     /*passwordConfir=$('input[name=Confirmacion]').val();*/
         /*var input=$('input[name=Confirmacion]').focus(function(){
@@ -63,7 +64,7 @@ $(document).ready(function(){
         password=$('input[name=Contraseña]').val();
         tarjeta=$('input[name=tarjeta]').val();
         
-        console.log(nombre);
+        
         
         // si no hay nada en los datos 
         if((nombre==0)||(correo==0)||(password==0)||(tarjeta==0)||(password!=passwordConfir))
