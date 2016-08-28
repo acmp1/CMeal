@@ -63,7 +63,7 @@ $(document).ready(function(){
         password=$('input[name=Contraseña]').val();
         tarjeta=$('input[name=tarjeta]').val();
         
-        consolle.log(nombre);
+        console.log(nombre);
         
         // si no hay nada en los datos 
         if((nombre==0)||(correo==0)||(password==0)||(tarjeta==0)||(password!=passwordConfir))
