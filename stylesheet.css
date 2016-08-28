@@ -13,6 +13,14 @@
 	border-radius: 10px;
 }
 
+.centro2{
+	margin-left:25%;
+	margin-right:22%;
+	border: 2px solid #f0f5f5;
+	border-radius: 10px;
+	height: 700px;
+}
+
 .cuadro{
 	border-radius = 5px;
 	border: 2px solid #ffcc66;
