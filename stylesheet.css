@@ -15,7 +15,7 @@
 
 .centro2{
 	margin-left:25%;
-	margin-right:22%;
+	margin-right:25%;
 	border: 2px solid #f0f5f5;
 	border-radius: 10px;
 	height: 700px;
@@ -30,6 +30,7 @@
 	margin-left: 90px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	position:absolute;
 	
 	
 	
