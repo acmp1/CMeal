@@ -31,10 +31,7 @@ function initMap(){
         }
 google.maps.event.addDomListener(window, 'load', initMap);
 
-
-$(document).ready(function(){
-    
-    // clase usuario con atributos
+//clase usario
      var Usuario = function(nombre,password,tarjeta,correo)
 {
      this.nombre=nombre;
@@ -48,6 +45,10 @@ var arrUsuario=[];
 var ContaUsuario=0;
     
     var nombre="0",password="0",tarjeta="0",correo="0",passwordConfir="0";
+
+$(document).ready(function(){
+    
+    
     /*passwordConfir=$('input[name=Confirmacion]').val();*/
         /*var input=$('input[name=Confirmacion]').focus(function(){
             input.css('outline-color','#00ff00')
