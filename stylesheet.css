@@ -17,12 +17,13 @@
 	border-radius = 5px;
 	border: 2px solid #ffcc66;
 	width: 60%;
+	height: 90%;
 	background-color: #ffe6b3;
 }
 
-#platillos{
+/*#platillos{
 	height: 90%;
-}
+}*/
 
 body {
 	font-size:87.5%;
