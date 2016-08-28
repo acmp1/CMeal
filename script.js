@@ -28,7 +28,7 @@ function initMap(){
                                 'Error: The Geolocation service failed.':
                                 'Error: Your browser doesn\'t support geolocation');
         }
-google.maps.event.addDomListener(window, 'resize', initMap);
+google.maps.event.addDomListener(window, 'load', initMap);
 $(document).ready(function(){
     $(window).resize(function(){
         if ($(window).width()<=580) {
