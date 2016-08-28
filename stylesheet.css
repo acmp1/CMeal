@@ -36,6 +36,7 @@
 
 #platillos{
 	height: 450px;
+	position: absolute;
 }
 
 body {
