@@ -18,13 +18,15 @@
 	color:#5c5c3d;
 	font-weight:bold;
 }
-#NomEmpresa p{
+#platillos p{
 	margin-left:33%;
 	margin-right:33%;
 	color:#000000;
 	font-weight:normal;
 	border-radius:10px;
 	border:1.5px solid #b8b894;
+	width:33%;
+	text-align:left;
 }
 .centro2{
 	margin-left:25%;
