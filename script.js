@@ -83,7 +83,7 @@ function initMap(){
         
         }
         markers[0].addListener('click',function(){
-            window.location.href='Pags/Cuadro.html';
+            window.location.href='Cuadro.html';
         });
         
         
