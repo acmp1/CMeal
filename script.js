@@ -90,8 +90,8 @@ function initMap(){
         }
         markers[0].addListener('click',function(){
             window.location.href='Cuadro.html';
-            iniciaPlatillos(0);
         });
+        iniciaPlatillos(0);
         markers[1].addListener('click',function(){
             window.location.href='Cuadro.html';
         });
