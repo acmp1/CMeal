@@ -40,6 +40,35 @@ google.maps.event.addDomListener(window, 'load', initMap);
     this.correo=correo;
 }
 
+var Platillo = function(nombre, precio)
+{
+    this.nombrePlatillo = nombre;
+    this.precio = precio;
+}
+
+var Servicio = function(arr, numPlat, lat, lon)
+{
+    this.platillos = arr;
+    this.numPlatillos = numPlat;
+    this.latitud = lat;
+    this.longitud = lon;
+}
+
+var platillo1 = new Platillo("Pollo", 30);
+var platillo2= new Platillo("Pescado", 25);
+var platillo3= new Platillo("Sandwich", 15);
+var platillo4= new Platillo("Pizza", 20);
+var platillo5= new Platillo("Taco de arrachera", 15);
+var platillo6= new Platillo("Sopa", 15);
+var platillo7= new Platillo("Molletes", 10);
+var platillo8= new Platillo("Chilaquiles", 15);
+
+
+
+
+
+
+
 // crea arreglo con objetos de usuario
 var arrUsuario=[];
 var ContaUsuario=0;
