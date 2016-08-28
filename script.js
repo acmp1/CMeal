@@ -31,13 +31,14 @@ var arr3 = [platillo6, platillo8, platillo1];
 var arr4 = [platillo4, platillo8, platillo6];
 var arr5 = [platillo1, platillo4, platillo5];
 
-
+// objetos servicio
 var servicio1 = new Servicio(arr1, "Chez Victor", 3, 25.647839, -100.290473 );
 var servicio2 = new Servicio(arr2, "Ashtons", 3, 25.648913, -100.292490);
 var servicio3 = new Servicio(arr3, "Tim Hortons", 3, 25.646038, -100.290891);
 var servicio4 = new Servicio(arr4, "Comida Feliz", 3, 25.648458, -100.289040 );
 var servicio5 = new Servicio(arr5, "Restaurante de clari", 3, 25.648850, -100.288573);
 
+// declaracion arreglo de servicios
 arrServicios = [servicio1, servicio2, servicio3, servicio4, servicio5];
 var iContaServicios = 5;
 
