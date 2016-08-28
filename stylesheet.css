@@ -12,7 +12,20 @@
 	border: 2px solid #f0f5f5;
 	border-radius: 10px;
 }
-
+#NomEmpresa{
+	margin-left:33%;
+	margin-right:33%;
+	color:#5c5c3d;
+	font-weight:bold;
+}
+#NomEmpresa p{
+	margin-left:33%;
+	margin-right:33%;
+	color:#000000;
+	font-weight:normal;
+	border-radius:10px;
+	border:1.5px solid #b8b894;
+}
 .centro2{
 	margin-left:25%;
 	margin-right:25%;
@@ -31,9 +44,6 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 	position:absolute;
-	
-	
-	
 }
 
 #platillos{
