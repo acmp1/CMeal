@@ -43,6 +43,12 @@ var servicio5 = new Servicio(arr5, "Restaurante de clari", 3, 25.648850, -100.28
 arrServicios = [servicio1, servicio2, servicio3, servicio4, servicio5];
 var iContaServicios = 5;
 
+var iniciaPlatillos = function(num){
+    for(var conta=0;conta<arrServicios[num].numPlatillos;conta++)
+            {
+                $("#platillos").append("<div><p>"+arrServicios[num].platillos[conta].nombrePlatillo+"  Precio: $"+arrServicios[num].platillos[conta].precio+"</p></div>");
+            }
+}
 
 var map;
 
@@ -84,10 +90,7 @@ function initMap(){
         }
         markers[0].addListener('click',function(){
             window.location.href='Cuadro.html';
-            for(var conta=0;conta<arrServicios[0].numPlatillos;conta++)
-            {
-                $("#platillos").append("<div><p>"+arrServicios[0].platillos[conta].nombrePlatillo+"  Precio: $"+arrServicios[0].platillos[conta].precio+"</p></div>");
-            }
+            iniciaPlatillos(0);
         });
         markers[1].addListener('click',function(){
             window.location.href='Cuadro.html';
