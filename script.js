@@ -1,7 +1,7 @@
 var map;
 function initMap(){
     map=new google.maps.Map(document.getElementById('map'),{
-        center:{lat:-34.397,lng:150.644},
+        center:{lat:25.651517,lng:-100.289669},
         zoom: 17
     });
     var infoWindow=new google.maps.InfoWindow({map: map});
@@ -29,6 +29,10 @@ function initMap(){
                                 'Error: Your browser doesn\'t support geolocation');
         }
 google.maps.event.addDomListener(window, 'load', initMap);
+var Usuario = function(nombre,password,tarjeta)
+{
+    this.nombre
+}
 $(document).ready(function(){
     $(window).resize(function(){
         if ($(window).width()<=580) {
