@@ -22,6 +22,22 @@ function initMap(){
     } else{
         handleLocationError(false,infoWindow,map.getCenter());
         }
+        
+        var markers = new array();
+        
+          for(var iC = 0; iC < iContaServicios; iC++)
+        {
+            markers[iC] = new google.maps.Marker({
+            position: new google.maps.LatLng(arrServicios[iC].latitud , arrServicios[iC].longitud),
+             map: map,
+             draggable:false,
+             title: arrServicios[iC].nombreRest
+             });
+            
+        
+        }
+        
+        
     }
     function handleLocationError(browserHasGeolocation,infoWindow,pos){
         infoWindow.setPosition(pos);
