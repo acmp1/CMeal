@@ -68,8 +68,8 @@ function initMap(){
         handleLocationError(false,infoWindow,map.getCenter());
         }
         
-        var markers = new array();
-        
+        var markers = new Array();
+        // var markers = [];
           for(var iC = 0; iC < iContaServicios; iC++)
         {
              markers[iC] = new google.maps.Marker({
