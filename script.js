@@ -89,8 +89,18 @@ function initMap(){
                 $("#platillos").append("<div class="formato"><p>"+arrServicios[0].platillos[conta].nombrePlatillo+"  Precio: $"+arrServicios[0].platillos[conta].precio+"</p></div>");
             }*/
         });
-        
-        
+        markers[1].addListener('click',function(){
+            window.location.href='Cuadro.html';
+        });
+        markers[2].addListener('click',function(){
+            window.location.href='Cuadro.html';
+        });
+        markers[3].addListener('click',function(){
+            window.location.href='Cuadro.html';
+        });
+        markers[4].addListener('click',function(){
+            window.location.href='Cuadro.html';
+        });
     }
     function handleLocationError(browserHasGeolocation,infoWindow,pos){
         infoWindow.setPosition(pos);
