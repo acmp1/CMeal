@@ -61,8 +61,12 @@ $(document).ready(function(){
         else
         {
             arrUsuario[ContaUsuario]=new Usuario(nombre,password,tarjeta,correo);
-            ContaUsuario++;
-            $("#bRegistrar,a").attr('href',"/CMeal/index.html");
+            var x=prompt(arrUsuario[ContaUsuario].nombre);
+            if(x="Hola")
+            {
+                ContaUsuario++;
+                $("#bRegistrar,a").attr('href',"/CMeal/index.html");
+            }
         }
     });
     $(window).resize(function(){
