@@ -1,5 +1,5 @@
 var map;
-console.log("hola");
+
 function initMap(){
     map=new google.maps.Map(document.getElementById('map'),{
         center:{lat:25.651517,lng:-100.289669},
@@ -31,11 +31,16 @@ function initMap(){
         }
 google.maps.event.addDomListener(window, 'load', initMap);
 
-// clase usuario con atributos
-var Usuario = function(nombre,password,tarjeta,correo)
+
+
+
+$(document).ready(function(){
+    
+    // clase usuario con atributos
+     var Usuario = function(nombre,password,tarjeta,correo)
 {
-    this.nombre=nombre;
-    this.password=password;
+     this.nombre=nombre;
+     this.password=password;
     this.tarjeta=tarjeta;
     this.correo=correo;
 }
@@ -43,9 +48,6 @@ var Usuario = function(nombre,password,tarjeta,correo)
 // crea arreglo con objetos de usuario
 var arrUsuario=[];
 var ContaUsuario=0;
-
-
-$(document).ready(function(){
     
     var nombre="0",password="0",tarjeta="0",correo="0",passwordConfir="0";
     /*passwordConfir=$('input[name=Confirmacion]').val();*/
