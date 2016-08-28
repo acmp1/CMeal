@@ -44,6 +44,18 @@ $(document).ready(function(){
         nombre=$('input[name=nUsuario]').val();
         password=$('input[name=Contraseña]').val();
         passwordConfir=$('input[name=Confirmacion]').val();
+        if(password==passwordConfir)
+        {
+            $('#Confir').focus(function(){
+                input.css('outline-color','#00ff00')
+            });
+        }
+        else
+        {
+            $('#Confir').focus(function(){
+                input.css('outline-color','#ff0000')
+            });
+        }
         tarjeta=$('input[name=tarjeta]').val();
         correo=$('input[name=correo]').val();
     });
