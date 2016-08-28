@@ -29,6 +29,8 @@ function initMap(){
                                 'Error: Your browser doesn\'t support geolocation');
         }
 google.maps.event.addDomListener(window, 'load', initMap);
+
+// clase usuario con atributos
 var Usuario = function(nombre,password,tarjeta,correo)
 {
     this.nombre=nombre;
@@ -36,8 +38,12 @@ var Usuario = function(nombre,password,tarjeta,correo)
     this.tarjeta=tarjeta;
     this.correo=correo;
 }
+
+// crea arreglo con objetos de usuario
 var arrUsuario=[];
 var ContaUsuario=0;
+
+
 $(document).ready(function(){
     var nombre="0",password="0",tarjeta="0",correo="0",passwordConfir="0";
     /*passwordConfir=$('input[name=Confirmacion]').val();*/
@@ -49,24 +55,31 @@ $(document).ready(function(){
             var input=$('input[name=Confirmacion]').focus(function(){
                 input.css('outline-color','#ff0000')
             });*/
+            
+            // cuando pica registrar se pasan los valores de las cajitas a las variables
     $("#bRegistrar").click(function(){
         nombre=$('input[name=nUsuario]').val();
         correo=$('input[name=correo]').val();
         password=$('input[name=Contraseña]').val();
         tarjeta=$('input[name=tarjeta]').val();
+        
+        consolle.log(nombre);
+        
+        // si no hay nada en los datos 
         if((nombre==0)||(correo==0)||(password==0)||(tarjeta==0)||(password!=passwordConfir))
         {
             console.log("Datos inválidos");
         }
         else
         {
-            arrUsuario[ContaUsuario]=new Usuario(nombre,password,tarjeta,correo);
-            var x=prompt(arrUsuario[ContaUsuario].nombre);
+            arrUsuario[ContaUsuario++]= new Usuario(nombre,password,tarjeta,correo);
+            
+            /*var x=prompt(arrUsuario[ContaUsuario].nombre);
             if(x="Hola")
             {
                 ContaUsuario++;
                 $("#bRegistrar,a").attr('href',"Main.html");
-            }
+            }*/
         }
     });
     $(window).resize(function(){
