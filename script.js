@@ -31,7 +31,9 @@ function initMap(){
 google.maps.event.addDomListener(window, 'load', initMap);
 var Usuario = function(nombre,password,tarjeta)
 {
-    this.nombre
+    this.nombre=nombre;
+    this.password=password;
+    this.tarjeta=tarjeta;
 }
 $(document).ready(function(){
     $(window).resize(function(){
