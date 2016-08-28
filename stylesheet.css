@@ -16,8 +16,8 @@
 .cuadro{
 	border-radius = 5px;
 	border: 2px solid #ffcc66;
-	width: 60%;
-	height: 90%;
+	width: 200px;
+	height: 300px%;
 	background-color: #ffe6b3;
 	margin: 10px 10px 10px 10px;
 }
