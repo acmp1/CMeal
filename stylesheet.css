@@ -16,6 +16,11 @@
 .cuadro{
 	border-radius = 5px;
 	border: 2px solid #ffcc66;
+	width: 50%;
+}
+
+#platillos{
+	height: 60%;
 }
 
 body {
