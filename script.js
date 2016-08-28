@@ -62,7 +62,7 @@ $(document).ready(function(){
         {
             arrUsuario[ContaUsuario]=new Usuario(nombre,password,tarjeta,correo);
             ContaUsuario++;
-            $("#bRegistrar a").attr('href',"/CMeal/index.html");
+            $("#bRegistrar,a").attr('href',"/CMeal/index.html");
         }
     });
     $(window).resize(function(){
