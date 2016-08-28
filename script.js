@@ -46,12 +46,12 @@ $(document).ready(function(){
     passwordConfir=$('input[name=Confirmacion]').val();
     if(password==passwordConfir)
     {
-        $('input[name=Confirmacion]').focus(function(){
+        var input=$('input[name=Confirmacion]').focus(function(){
             input.css('outline-color','#00ff00')
         });
     }else
         {
-            $('input[name=Confirmacion]').focus(function(){
+            var input=$('input[name=Confirmacion]').focus(function(){
                 input.css('outline-color','#ff0000')
             });
         }
