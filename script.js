@@ -13,7 +13,7 @@ function initMap(){
             };
             
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
+            infoWindow.setContent('Ubicación Actual.');
             map.setCenter(pos);
         },function(){
             handleLocationError(true,infoWindow,map.getCenter());
@@ -28,6 +28,7 @@ function initMap(){
                                 'Error: The Geolocation service failed.':
                                 'Error: Your browser doesn\'t support geolocation');
         }
+google.maps.event.addDomListener(window, 'resize', initMap);
 $(document).ready(function(){
     $(window).resize(function(){
         if ($(window).width()<=580) {
