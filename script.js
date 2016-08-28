@@ -86,7 +86,7 @@ function initMap(){
             window.location.href='Cuadro.html';
             for(var conta=0;conta<arrServicios[0].numPlatillos;conta++)
             {
-                $("#platillos").append("<div class="formato"><p>"+arrServicios[0].platillos[conta].nombrePlatillo+"  Precio: $"+arrServicios[0].platillos[conta].precio+"</p></div>")
+                $("#platillos").append("<div class="formato"><p>"+arrServicios[0].platillos[conta].nombrePlatillo+"  Precio: $"+arrServicios[0].platillos[conta].precio+"</p></div>");
             }
         });
         
