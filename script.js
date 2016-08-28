@@ -65,7 +65,7 @@ $(document).ready(function(){
             if(x="Hola")
             {
                 ContaUsuario++;
-                $("#bRegistrar,a").attr('href',"/CMeal/index.html");
+                $("#bRegistrar,a").attr('href',"Main.html");
             }
         }
     });
