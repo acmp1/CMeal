@@ -54,13 +54,15 @@ $(document).ready(function(){
                 input.css('outline-color','#ff0000')
             });*/
     $("#bRegistrar").click(function(){
-        if((nombre==0)||(correo==0)||(password==0)||(tarjeta==0)||(correo==0)||(password!=passwordConfir))
+        if((nombre==0)||(correo==0)||(password==0)||(tarjeta==0)||(password!=passwordConfir))
         {
             console.log("Datos inválidos");
         }
         else
         {
             arrUsuario[ContaUsuario]=new Usuario(nombre,password,tarjeta,correo);
+            ContaUsuario++;
+            $("#bRegistrar a").attr('href',"/CMeal/index.html");
         }
     });
     $(window).resize(function(){
