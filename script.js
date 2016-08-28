@@ -44,20 +44,24 @@ $(document).ready(function(){
     correo=$('input[name=correo]').val();
     password=$('input[name=Contraseña]').val();
     passwordConfir=$('input[name=Confirmacion]').val();
-    if(password==passwordConfir)
-    {
-        var input=$('input[name=Confirmacion]').focus(function(){
+    tarjeta=$('input[name=tarjeta]').val();
+        /*var input=$('input[name=Confirmacion]').focus(function(){
             input.css('outline-color','#00ff00')
         });
     }else
         {
             var input=$('input[name=Confirmacion]').focus(function(){
                 input.css('outline-color','#ff0000')
-            });
-        }
-    tarjeta=$('input[name=tarjeta]').val();
+            });*/
     $("#bRegistrar").click(function(){
-        
+        if((nombre==0)||(correo==0)||(password==0)||(tarjeta==0)||(correo==0)||(password!=passwordConfir))
+        {
+            console.log("Datos inválidos");
+        }
+        else
+        {
+            arrUsuario[ContaUsuario]=new Usuario(nombre,password,tarjeta,correo);
+        }
     });
     $(window).resize(function(){
         if ($(window).width()<=580) {
