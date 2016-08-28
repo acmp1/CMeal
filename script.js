@@ -1,61 +1,3 @@
-var map;
-
-function initMap(){
-    map=new google.maps.Map(document.getElementById('map'),{
-        center:{lat:25.651517,lng:-100.289669},
-        zoom: 17
-    });
-    var infoWindow=new google.maps.InfoWindow({map: map});
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(function(position){
-            var pos ={
-                lat:position.coords.latitude,
-                lng:position.coords.longitude
-            };
-            
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Ubicación Actual.');
-            map.setCenter(pos);
-        },function(){
-            handleLocationError(true,infoWindow,map.getCenter());
-        });
-    } else{
-        handleLocationError(false,infoWindow,map.getCenter());
-        }
-        
-        var markers = new array();
-        
-          for(var iC = 0; iC < iContaServicios; iC++)
-        {
-            markers[iC] = new google.maps.Marker({
-            position: new google.maps.LatLng(arrServicios[iC].latitud , arrServicios[iC].longitud),
-             map: map,
-             draggable:false,
-             title: arrServicios[iC].nombreRest
-             });
-            
-        
-        }
-        
-        
-    }
-    function handleLocationError(browserHasGeolocation,infoWindow,pos){
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                                'Error: The Geolocation service failed.':
-                                'Error: Your browser doesn\'t support geolocation');
-        }
-google.maps.event.addDomListener(window, 'load', initMap);
-
-//clase usario
-     var Usuario = function(nombre,password,tarjeta,correo)
-{
-     this.nombre=nombre;
-     this.password=password;
-    this.tarjeta=tarjeta;
-    this.correo=correo;
-}
-
 // clase platillo
 var Platillo = function(nombre, precio)
 {
@@ -100,8 +42,63 @@ arrServicios = [servicio1, servicio2, servicio3, servicio4, servicio5];
 var iContaServicios = 5;
 
 
+var map;
 
+function initMap(){
+    map=new google.maps.Map(document.getElementById('map'),{
+        center:{lat:25.651517,lng:-100.289669},
+        zoom: 17
+    });
+    var infoWindow=new google.maps.InfoWindow({map: map});
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(function(position){
+            var pos ={
+                lat:position.coords.latitude,
+                lng:position.coords.longitude
+            };
+            
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Ubicación Actual.');
+            map.setCenter(pos);
+        },function(){
+            handleLocationError(true,infoWindow,map.getCenter());
+        });
+    } else{
+        handleLocationError(false,infoWindow,map.getCenter());
+        }
+        
+        var markers = new array();
+        
+          for(var iC = 0; iC < iContaServicios; iC++)
+        {
+             markers[iC] = new google.maps.Marker({
+             position: new google.maps.LatLng(arrServicios[iC].latitud , arrServicios[iC].longitud),
+             map: map,
+             draggable:false,
+             title: arrServicios[iC].nombreRest
+             });
+            
+        
+        }
+        
+        
+    }
+    function handleLocationError(browserHasGeolocation,infoWindow,pos){
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                                'Error: The Geolocation service failed.':
+                                'Error: Your browser doesn\'t support geolocation');
+        }
+google.maps.event.addDomListener(window, 'load', initMap);
 
+//clase usario
+     var Usuario = function(nombre,password,tarjeta,correo)
+{
+     this.nombre=nombre;
+     this.password=password;
+    this.tarjeta=tarjeta;
+    this.correo=correo;
+}
 
 
 // crea arreglo con objetos de usuario
