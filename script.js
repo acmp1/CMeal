@@ -40,11 +40,7 @@ var arrUsuario=[];
 var ContaUsuario=0;
 $(document).ready(function(){
     var nombre="0",password="0",tarjeta="0",correo="0",passwordConfir="0";
-    nombre=$('input[name=nUsuario]').val();
-    correo=$('input[name=correo]').val();
-    password=$('input[name=Contraseña]').val();
-    passwordConfir=$('input[name=Confirmacion]').val();
-    tarjeta=$('input[name=tarjeta]').val();
+    /*passwordConfir=$('input[name=Confirmacion]').val();*/
         /*var input=$('input[name=Confirmacion]').focus(function(){
             input.css('outline-color','#00ff00')
         });
@@ -54,6 +50,10 @@ $(document).ready(function(){
                 input.css('outline-color','#ff0000')
             });*/
     $("#bRegistrar").click(function(){
+        nombre=$('input[name=nUsuario]').val();
+        correo=$('input[name=correo]').val();
+        password=$('input[name=Contraseña]').val();
+        tarjeta=$('input[name=tarjeta]').val();
         if((nombre==0)||(correo==0)||(password==0)||(tarjeta==0)||(password!=passwordConfir))
         {
             console.log("Datos inválidos");
